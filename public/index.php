@@ -51,6 +51,6 @@ echo 4;
 $kernel = $app->make(Kernel::class);
 echo 5;
 $response = $kernel->handle($request = Request::capture())->send();
-exit();
 echo 6;
 $kernel->terminate($request, $response);
+exit();
