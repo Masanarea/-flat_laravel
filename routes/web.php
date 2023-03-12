@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Common\MasterController;
 
+use App\Http\Controllers\Clinic\indexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +15,11 @@ use App\Http\Controllers\Common\MasterController;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/test', function () {
     return view('welcome');
 });
+Route::phase('/', 'indexController@getClinicList');
+Route::phase('/test2', 'indexController@getClinicList');
