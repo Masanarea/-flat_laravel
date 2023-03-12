@@ -18,8 +18,8 @@ use App\Http\Controllers\Clinic\indexController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/test', function () {
-    return view('welcome');
-});
-Route::phase('/', 'indexController@getClinicList');
-Route::phase('/test2', 'indexController@getClinicList');
+// Route::get('/test', function () {
+//     return view('welcome');
+// });
+// Route::phase('/', 'indexController@getClinicList');
+// Route::phase('/test2', 'indexController@getClinicList');
