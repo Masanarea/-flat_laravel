@@ -44,12 +44,13 @@ require __DIR__ . '/../vendor/autoload.php';
 | to this client's browser, allowing them to enjoy our application.
 |
 */
-exit();
+
 echo 3;
 $app = require_once __DIR__ . '/../bootstrap/app.php';
-
+echo 4;
+exit();
 $kernel = $app->make(Kernel::class);
-
+echo 5;
 $response = $kernel->handle($request = Request::capture())->send();
-
+echo 6;
 $kernel->terminate($request, $response);
