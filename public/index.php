@@ -50,7 +50,7 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
 echo 4;
 $kernel = $app->make(Kernel::class);
 echo 5;
-exit();
 $response = $kernel->handle($request = Request::capture())->send();
+exit();
 echo 6;
 $kernel->terminate($request, $response);
