@@ -8,10 +8,15 @@
             "use": "vercel-php@0.5.2"
         }
     ],
-    "routes": [{ "src": "/(.*)", "dest": "/$1" }, { "handle": "filesystem" }, { "src": "/.*", "dest": "/404.html" }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.php"
+        }
+    ],
     "env": {
         "APP_NAME": "Laravel Vercel",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
