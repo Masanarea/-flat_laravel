@@ -59,7 +59,7 @@ use App\Http\Controllers\Clinic\indexController;
 
 // Route::get('/user', function (Request $request) {
 // return ["book1", "book2", "book3"];
-//     return response()->json([
+//     return response()->json([request
 //     'outings' => $outings
 // ], 200);
 // return  response()->json(['outings' => "111", 'www' => "222"], 200);
