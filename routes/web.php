@@ -27,3 +27,9 @@ Route::get('/about', function () {
 // });
 // Route::phase('/', 'indexController@getClinicList');
 // Route::phase('/test2', 'indexController@getClinicList');
+
+Route::get('prefectures', [MasterController::class, 'prefectures'])->name('common.prefectures');
+
+Route::post('add/clinic', [indexController::class, 'addClinic']);
+// オプションパラメータ
+Route::post('clinic/list/{category_type?}', [indexController::class, 'getClinicList']);
