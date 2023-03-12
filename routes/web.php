@@ -16,8 +16,8 @@ use App\Http\Controllers\Clinic\indexController;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
-    return [1];
+    return view('welcome');
+    // return [1];
 });
 // Route::get('/test', function () {
 //     return view('welcome');
