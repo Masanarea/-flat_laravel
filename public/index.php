@@ -52,15 +52,15 @@ echo 4;
 $kernel = $app->make(Kernel::class);
 echo '<pre>';
 echo 5;
-var_dump($kernel);
+// var_dump($kernel);
 echo '</pre>';
 $response = $kernel->handle($request = Request::capture())->send();
 
 echo '<pre>';
 echo 6;
-var_dump($response);
+// var_dump($response);
 echo '</pre>';
-$kernel->terminate($request, $response);
+// $kernel->terminate($request, $response);
 echo '<pre>';
 echo 6;
 // var_dump($kernel->terminate($request, $response));
