@@ -15,7 +15,7 @@ define('LARAVEL_START', microtime(true));
 | instead of starting the framework, which could cause an exception.
 |
 */
-echo 1;
+// echo 1;
 if (file_exists($maintenance = __DIR__ . '/../storage/framework/maintenance.php')) {
     require $maintenance;
 }
@@ -31,7 +31,7 @@ if (file_exists($maintenance = __DIR__ . '/../storage/framework/maintenance.php'
 |
 */
 
-echo 2;
+// echo 2;
 require __DIR__ . '/../vendor/autoload.php';
 
 /*
@@ -45,24 +45,24 @@ require __DIR__ . '/../vendor/autoload.php';
 |
 */
 
-echo 3;
+// echo 3;
 $app = require_once __DIR__ . '/../bootstrap/app.php';
-echo 4;
+// echo 4;
 
 $kernel = $app->make(Kernel::class);
-echo '<pre>';
-echo 5;
+// echo '<pre>';
+// echo 5;
 // var_dump($kernel);
-echo '</pre>';
+// echo '</pre>';
 $response = $kernel->handle($request = Request::capture())->send();
 
-echo '<pre>';
-echo 6;
+// echo '<pre>';
+// echo 6;
 // var_dump($response);
-echo '</pre>';
-// $kernel->terminate($request, $response);
-echo '<pre>';
-echo 6;
+// echo '</pre>';
+$kernel->terminate($request, $response);
+// echo '<pre>';
+// echo 6;
 // var_dump($kernel->terminate($request, $response));
-echo '</pre>';
+// echo '</pre>';
 // exit();
