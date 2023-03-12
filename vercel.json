@@ -10,7 +10,15 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/",
+            "dest": "/index.php"
+        },
+        {
+            "src": "/about",
+            "dest": "/index.php"
+        },
+        {
+            "src": "/contact",
             "dest": "/index.php"
         }
     ],
