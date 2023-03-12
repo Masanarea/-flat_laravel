@@ -48,9 +48,21 @@ require __DIR__ . '/../vendor/autoload.php';
 echo 3;
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 echo 4;
+
 $kernel = $app->make(Kernel::class);
+echo '<pre>';
 echo 5;
+var_dump($kernel);
+echo '</pre>';
 $response = $kernel->handle($request = Request::capture())->send();
+
+echo '<pre>';
 echo 6;
+var_dump($response);
+echo '</pre>';
 $kernel->terminate($request, $response);
+echo '<pre>';
+echo 6;
+// var_dump($kernel->terminate($request, $response));
+echo '</pre>';
 exit();
