@@ -10,21 +10,15 @@
     ],
     "routes": [
         {
-            "src": "/",
-            "dest": "/index.php"
-        },
-        {
-            "src": "/about",
-            "dest": "/index.php"
-        },
-        {
-            "src": "/contact",
+            "src": "/(.*)",
             "dest": "/index.php"
         }
     ],
     "env": {
         "APP_NAME": "Laravel Vercel",
+        "APP_ENV": "production",
         "APP_DEBUG": "true",
+        "APP_KEY": "base64:khYfW1kZKfdEsMNYdKP0rnUh6TWdj4C+Ct0a6VDe6Vc=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
