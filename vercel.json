@@ -4,8 +4,12 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/",
             "dest": "/index.php"
+        },
+        {
+            "src": "/about",
+            "dest": "/about"
         }
     ],
     "builds": [
