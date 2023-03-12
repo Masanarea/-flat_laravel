@@ -65,4 +65,4 @@ echo '<pre>';
 echo 6;
 // var_dump($kernel->terminate($request, $response));
 echo '</pre>';
-exit();
+// exit();
